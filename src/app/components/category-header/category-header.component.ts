@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-category-header',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./category-header.component.scss']
 })
 export class CategoryHeaderComponent {
-
+  @Input() public title: string = '';
+  @Input() public quantity: number = 0;
 }

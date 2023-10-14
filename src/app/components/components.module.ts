@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CardComponent } from './card/card.component';
 import { HeaderComponent } from './header/header.component';
 import { CategoryHeaderComponent } from './category-header/category-header.component';
-import { PromotionComponent } from './promotion/promotion.component';
+import { PromotionBannerComponent } from './promotion-banner/promotion-banner.component';
 import { ClothesComponent } from './clothes/clothes.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchClothesComponent } from './search-clothes/search-clothes.component';
@@ -19,7 +19,7 @@ const components = [
   CardComponent,
   HeaderComponent,
   CategoryHeaderComponent,
-  PromotionComponent,
+  PromotionBannerComponent,
   ClothesComponent,
   FooterComponent,
   SearchClothesComponent,

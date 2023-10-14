@@ -1,0 +1,141 @@
+@import 'src/styles.scss';
+
+@mixin title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@mixin column {
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  color: $light-gray;
+  text-transform: capitalize;
+  gap: 12px;
+  padding: 0 30px;
+}
+
+@mixin link {
+  text-decoration: none;
+  color: $light-gray;
+  font-weight: 400;
+  font-family: inherit;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.footer {
+  background-color: black;
+  bottom: 0;
+  color: $light-gray;
+  display: flex;
+  flex-direction: column;
+  font-family: $open-sans;
+  font-size: 12px;
+  padding: 50px 20px 25px 20px;
+  position: relative;
+
+  .row {
+    &__business {
+      font-family: inherit;
+      display: grid;
+      grid-template-columns: 25% 20% 20% 20% 15%;
+
+      .column {
+        &__info {
+          &--logo {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 14px;
+          }
+
+          &--description {
+            font-weight: 400;
+            font-size: 12px;
+            width: 91%
+          }
+        }
+
+        &__about-us {
+          @include column;
+
+          &--title {
+            @include title;
+          }
+
+          &--link {
+            @include link;
+          }
+        }
+
+        &__help {
+          @include column;
+
+          &--title {
+            @include title;
+          }
+
+          &--link {
+            @include link;
+          }
+        }
+
+        &__account {
+          @include column;
+
+          &--title {
+            @include title;
+          }
+
+          &--link {
+            @include link;
+          }
+        }
+
+        &__social-media {
+          @include column;
+
+          &--title {
+            @include title;
+          }
+
+          &--link {
+            display: flex;
+            gap: 10px;
+            justify-content: start;
+            align-items: center;
+            @include link;
+          }
+        }
+      }
+    }
+
+    &__legal {
+      margin-top: 42px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 400;
+
+      &--documents {
+        span {
+          margin: 0 5px;
+
+          a {
+            text-decoration: none;
+            color: $light-gray;
+
+            &:hover {
+              color: $orange;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}

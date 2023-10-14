@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
+  hover: boolean = false;
+  cardIsHovered: boolean = false;
 
 }

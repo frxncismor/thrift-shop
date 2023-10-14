@@ -5,11 +5,11 @@
   flex-direction: column;
   justify-content: center;
   font-family: $open-sans;
-  padding: 20px;
   gap: 16px;
 
   &__title {
     margin: auto 0;
+    text-transform: capitalize;
 
     &--main {
       font-size: 20px;
@@ -25,7 +25,7 @@
 
   &__bar {
     background-color: $light-gray;
-    border-radius: 10px;
+    border-radius: $border-radius;
     padding: 10px 12px;
     display: flex;
     justify-content: space-between;

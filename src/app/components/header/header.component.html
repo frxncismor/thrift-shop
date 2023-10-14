@@ -1,0 +1,23 @@
+<nav class="header">
+  <div class="header__pages">
+    <a class="header__pages--logo" routerLink="/home">Thrift Shop</a>
+    <div class="header__pages--links">
+      <a class="link" routerLink="/men" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Men</a>
+      <a class="link" routerLink="/women" routerLinkActive="active">Women</a>
+    </div>
+  </div>
+  <div class="header__options">
+    <button class="header__options--search">
+      <svg-icon name="search" width="18" height="18"></svg-icon>
+    </button>
+    <a class="header__options--wishlist" [routerLink]="[ '/wishlist' ]" routerLinkActive="active">
+      <svg-icon name="heart" width="18" height="18"></svg-icon>
+    </a>
+    <a class="header__options--cart" [routerLink]="[ '/cart' ]" routerLinkActive="active">
+      <svg-icon name="cart" width="18" height="18"></svg-icon>
+    </a>
+    <button class="header__options--profile">
+      <img src="assets/png/profile.png" alt="profile image">
+    </button>
+  </div>
+</nav>

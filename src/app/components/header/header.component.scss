@@ -1,0 +1,93 @@
+@import 'src/styles.scss';
+
+.header {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+  font-family: $open-sans;
+  border-bottom: 2px solid $light-gray;
+
+  &__pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    gap: 22px;
+
+    &--logo {
+      font-size: 16px;
+      color: $green;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    &--links {
+      display: flex;
+      gap: 20px;
+      height: 100%;
+
+      .link {
+        text-decoration: none;
+        color: $black;
+        font-size: 12px;
+        font-weight: 600;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &.active {
+          color: $green;
+          text-decoration: underline;
+          text-underline-offset: 15px;
+          text-decoration-thickness: 2px;
+        }
+
+        &:hover {
+          color: $green;
+          cursor: pointer;
+          text-underline-offset: 15px;
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+        }
+      }
+    }
+  }
+
+  &__options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+
+    button,
+    a {
+      cursor: pointer;
+      color: $black;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    button {
+      border: none;
+      background-color: transparent;
+      padding: 0;
+
+      img {
+        width: 24px;
+      }
+    }
+
+    &--profile {
+      height: 24px;
+    }
+  }
+}

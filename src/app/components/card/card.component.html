@@ -1,12 +1,12 @@
-<div class="card" (mouseover)="cardIsHovered=true" (mouseleave)="cardIsHovered=false">
-  <div class="card__header">
+<div class="card" routerLink="/details/1">
+  <div class=" card__header">
     <button class="card__header--new-arrivals">new arrivals</button>
     <button class="card__header--like" (mouseover)="hover=true" (mouseleave)="hover=false">
       <svg-icon [hidden]="hover" name="heart" width="10px" height="10px"></svg-icon>
       <svg-icon [hidden]="!hover" name="heart-filled" width="10px" height="10px"></svg-icon>
     </button>
   </div>
-  <div class="card__info">
+  <div class="card__info" (mouseover)="cardIsHovered=true" (mouseleave)="cardIsHovered=false">
     <h1 class="card__info--title">long sleeve round collar uv pre design</h1>
     <div class="card__info--review">
       <svg-icon class="review__star" name="star-filled" width="10px" height="10px"></svg-icon>
@@ -22,6 +22,5 @@
       add to cart
     </button>
   </div>
-
-  <img src="./../../../assets/images/model-1.jpeg" alt="clothes">
+  <img [src]="img" alt="clothes">
 </div>

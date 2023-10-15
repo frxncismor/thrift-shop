@@ -1,13 +1,12 @@
 <div class="clothes">
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-
+  <ng-container *ngIf="womenCards">
+    <ng-container *ngFor="let card of womenCards">
+      <app-card [img]="card.img"></app-card>
+    </ng-container>
+  </ng-container>
+  <ng-container *ngIf="menCards">
+    <ng-container *ngFor="let card of menCards">
+      <app-card [img]="card.img"></app-card>
+    </ng-container>
+  </ng-container>
 </div>

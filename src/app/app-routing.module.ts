@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'women', component: WomenComponent },
   { path: 'cart', component: CartComponent },
   { path: 'wishlist', component: WishlistComponent },
-  { path: ':id', component: DetailsComponent },
+  { path: 'details/:id', component: DetailsComponent },
 ];
 
 @NgModule({

@@ -10,11 +10,15 @@
   justify-content: space-between;
   font-family: $open-sans;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   img {
     position: absolute;
     top: 0;
     z-index: -1;
-    height: 110%;
+    height: 130%;
     object-fit: cover;
   }
 
